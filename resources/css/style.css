@@ -1,0 +1,53 @@
+/* Bootstrap overrides */
+
+.btn-primary {
+    background: #e67e22;
+    border: 1px solid #e67e22;
+}
+
+.btn-outline-primary {
+    color: #e67e22;
+    border: 1px solid #e67e22;
+}
+
+.btn-primary:hover, .btn-outline-primary:hover {
+    background: #cf6d17;
+    border: 1px solid #cf6d17;
+}
+
+/* Reusable Style */
+
+/* Headers */
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+/* Header */
+
+.jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    margin: 0;
+}
+
+/* Section Steps */
+
+.section-steps {
+    background: #f4f4f4;
+}
+
+/* Section Plans */
+
+.section-plans {
+    background: #f4f4f4;
+}
+
+/* Footer */
+
+footer {
+    background: #333;
+}
