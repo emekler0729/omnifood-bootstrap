@@ -6,35 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omnifood Bootstrap</title>
 
-    <!-- Bootstrap 4 CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
 
     <!--My stylesheets -->
-    <link rel="stylesheet" href="resources/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
 
 
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Omnifood</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">Omnifood</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="#">Food Delivery</a>
-                    <a class="nav-item nav-link" href="#">How it Works</a>
-                    <a class="nav-item nav-link" href="#">Our Cities</a>
-                    <a class="nav-item nav-link" href="#">Sign Up</a>
-                </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="#">Food Delivery</a>
+                <a class="nav-item nav-link" href="#">How it Works</a>
+                <a class="nav-item nav-link" href="#">Our Cities</a>
+                <a class="nav-item nav-link" href="#">Sign Up</a>
             </div>
-        </nav>
-
+        </div>
+    </nav>
+    <header>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-4">Goodbye junk food. <br> Hello super healthy meals.</h1>
@@ -43,10 +39,10 @@
             </div>
         </div>
     </header>
-    <section class="section-features py-5">
+    <section class="section-features">
         <div class="container">
             <div class="row">
-                <h2>Features Section Title</h2>
+                <h2 class="mx-auto">Features Section Title</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ipsum erat, maximus nec varius posuere, viverra a mi. Mauris pulvinar leo sit amet lectus posuere.
                 </p>
@@ -83,15 +79,15 @@
             </div>
         </div>
     </section>
-    <section class="section-meals py-5">
+    <section class="section-meals">
         <div class="container">
             &lt;--- Meal pictures will go here --->
         </div>
     </section>
-    <section class="section-steps py-5">
+    <section class="section-steps">
         <div class="container">
             <div class="row">
-                <h2>How It Works Section Title</h2>
+                <h2 class="mx-auto">How It Works Section Title</h2>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-12">
@@ -105,10 +101,10 @@
             </div>
         </div>
     </section>
-    <section class="section-cities py-5">
+    <section class="section-cities">
         <div class="container">
             <div class="row">
-                <h2>Cities Section Title</h2>
+                <h2 class="mx-auto">Cities Section Title</h2>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6">
@@ -166,10 +162,10 @@
             </div>
         </div>
     </section>
-    <section class="section-testimonials py-5">
+    <section class="section-testimonials">
         <div class="container">
             <div class="row">
-                <h2>Testimonials Section Title</h2>
+                <h2 class="mx-auto">Testimonials Section Title</h2>
             </div>
             <div class="row">
                 <div class="col-md-4">
@@ -202,10 +198,10 @@
             </div>
         </div>
     </section>
-    <section class="section-plans py-5">
+    <section class="section-plans">
         <div class="container">
             <div class="row">
-                <h2>Plans Section Title</h2>
+                <h2 class="mx-auto">Plans Section Title</h2>
             </div>
             <div class="row">
                 <div class="col-md-4">
@@ -274,10 +270,10 @@
             </div>
         </div>
     </section>
-    <section class="section-contact py-5">
+    <section class="section-contact">
         <div class="container">
             <div class="row">
-                <h2>Contact Form Section Title</h2>
+                <h2 class="mx-auto">Contact Form Section Title</h2>
             </div>
             <div class="row">
                 <div class="col">
@@ -361,10 +357,7 @@
 
 
 
-    <!--Bootstrap 4 JavaScript CDN-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-</body>
+
+<script type="text/javascript" src="bundle.js"></script></body>
 
 </html>
