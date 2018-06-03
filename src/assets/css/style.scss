@@ -1,19 +1,28 @@
 @import "custom";
 @import "~bootstrap/scss/bootstrap";
+@import "fontawesome.scss";
+@import "fa-solid.scss";
+
 
 /* Reusable Style */
+
+body {
+    @extend .font-weight-light;
+}
 
 /* Headers */
 
 h1, h2, h3 {
-    text-transform: uppercase;
+    @extend .text-uppercase;
 }
 
 h2:after {
     content: "";
     display: block;
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px $primary;
     width: 100px;
+    @extend .my-md-4, .my-3;
+    @extend .mx-auto;
 }
 
 h1 {
@@ -22,7 +31,41 @@ h1 {
 
 h2 {
     @extend .mx-auto;
+    @extend .font-weight-light;
+    letter-spacing: 120%;
 }
+
+h3 {
+    @extend .font-weight-light;
+}
+
+/* Icons */
+
+@mixin icon($icon) {
+    &:before {
+        @include fa-icon;
+        @extend .fas;
+        color: $primary;
+        content: $icon;
+    }
+
+}
+
+.icon-big {
+    &:before {
+        @extend .fa-3x;
+        display: block;
+    }
+}
+
+.icon-small {
+    &:before {
+        @extend .fa-sm;
+        display: inline-block;
+    }
+}
+
+
 
 /* Section */
 
@@ -49,13 +92,75 @@ nav {
     height: 100vh;
     color: #fff;
     margin: 0;
+    @extend .d-flex, .align-items-center;
 }
+
+/* Features Section */
+
+/* Icons */
+
+.section-features {
+    .features-copy {
+        width: 80%;
+        @extend .mx-auto;
+        @extend .lead;
+    }
+
+    .i-infinity, .i-clock, .i-lemon, .i-cart {
+        @extend .icon-big;
+        &:before {
+            @extend .mb-3;
+        }
+        @extend .mb-3;
+    }
+}
+
+.i-infinity {
+    @include icon(fa-content($fa-var-infinity));
+}
+
+.i-clock {
+    @include icon(fa-content($fa-var-clock));
+}
+
+.i-lemon {
+    @include icon(fa-content($fa-var-lemon));
+}
+
+.i-cart {
+    @include icon(fa-content($fa-var-shopping-cart));
+}
+
+
 
 /* Section Steps */
 
 .section-steps {
     background: #f4f4f4;
 }
+
+/* Testimonials Section */
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers-min.jpg);
+    background-size: cover;
+    background-position: center;
+    color: $white;
+
+    blockquote:before {
+        content: '\201C';
+        display: block;
+        font-size: 4rem;
+        @extend .pb-0, .mb-0;
+    }
+
+    img {
+        height: 50px;
+        width: auto;
+        @extend .rounded-circle;
+    }
+}
+
 
 /* Section Plans */
 
