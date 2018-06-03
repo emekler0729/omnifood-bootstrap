@@ -1,0 +1,70 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+/* Reusable Style */
+
+/* Headers */
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+h2:after {
+    content: "";
+    display: block;
+    border-bottom: solid 2px black;
+    width: 100px;
+}
+
+h1 {
+    @extend .display-4;
+}
+
+h2 {
+    @extend .mx-auto;
+}
+
+/* Section */
+
+section {
+    @extend .py-md-5, .py-3;
+}
+
+/* Nav Bar */
+
+nav {
+    @extend .navbar-dark, .bg-dark;
+}
+
+.navbar-nav {
+    @extend .ml-auto;
+}
+
+/* Header Section */
+
+.jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    margin: 0;
+}
+
+/* Section Steps */
+
+.section-steps {
+    background: #f4f4f4;
+}
+
+/* Section Plans */
+
+.section-plans {
+    background: #f4f4f4;
+}
+
+/* Footer */
+
+footer {
+    background: #333;
+}

@@ -1,0 +1,46 @@
+{
+    "name": "omnifood-bootstrap",
+    "version": "1.0.0",
+    "description": "Omnifood website created with Bootstrap 4 framework",
+    "private": "true",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack-dev-server --open",
+        "build": "webpack",
+        "git:push": "git subtree push --prefix dist origin master"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/emekler0729/omnifood-bootstrap.git"
+    },
+    "keywords": [
+        "Omnifood",
+        "Bootstrap",
+        "SCSS"
+    ],
+    "author": "Eduard Mekler",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/emekler0729/omnifood-bootstrap/issues"
+    },
+    "homepage": "https://github.com/emekler0729/omnifood-bootstrap#readme",
+    "devDependencies": {
+        "autoprefixer": "^8.6.0",
+        "css-loader": "^0.28.11",
+        "extract-loader": "^2.0.1",
+        "file-loader": "^1.1.11",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^3.2.0",
+        "node-sass": "^4.9.0",
+        "postcss-loader": "^2.1.5",
+        "sass-loader": "^7.0.2",
+        "webpack": "^4.10.2",
+        "webpack-cli": "^2.1.4",
+        "webpack-dev-server": "^3.1.4"
+    },
+    "dependencies": {
+        "bootstrap": "^4.1.1",
+        "jquery": "^3.3.1",
+        "popper.js": "^1.14.3"
+    }
+}
