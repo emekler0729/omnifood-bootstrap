@@ -1,7 +1,7 @@
 @import "custom";
 @import "~bootstrap/scss/bootstrap";
-@import "fontawesome.scss";
-@import "fa-solid.scss";
+@import "font-awesome/fontawesome.scss";
+@import "font-awesome/fa-solid.scss";
 
 
 /* Reusable Style */
@@ -37,6 +37,7 @@ h2 {
 
 h3 {
     @extend .font-weight-light;
+    font-size: 1.5rem;
 }
 
 /* Icons */
@@ -104,6 +105,7 @@ nav {
         width: 80%;
         @extend .mx-auto;
         @extend .lead;
+        @extend .mb-5;
     }
 
     .i-infinity, .i-clock, .i-lemon, .i-cart {
@@ -131,12 +133,33 @@ nav {
     @include icon(fa-content($fa-var-shopping-cart));
 }
 
+/* Meals Section */
+
+.section-meals {
+    @extend .py-0;
+
+    .row {
+        @extend .no-gutters;
+    }
+    img {
+        @extend .d-block, .w-100;
+    }
+}
 
 
 /* Section Steps */
 
 .section-steps {
     background: #f4f4f4;
+
+    .step {
+        span {
+            color: $primary;
+            border: solid 2px $primary;
+            @extend .rounded-circle;
+            padding: 15px;
+        }
+    }
 }
 
 /* Testimonials Section */

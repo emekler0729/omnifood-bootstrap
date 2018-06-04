@@ -77,14 +77,7 @@ module.exports = {
                         options: {
                             name: '[path][name].[ext]',
                             context: './src/',
-                            publicPath: function(url) {
-                                if(/\/css\//.test(url)) {
-                                    var nameStart = url.lastIndexOf('/') + 1;
-                                    return 'img/' + url.slice(nameStart);
-                                } else {
-                                    return url;
-                                }
-                            }
+                            publicPath: getPublicPath
                         }
                     }
                 ]
@@ -97,3 +90,16 @@ module.exports = {
         })
     ]
 };
+
+// If path is in the css folder then return urls from file-loader that
+// are relative to the css folder.
+function getPublicPath(url) {
+    if(/\/css\//.test(url)) {
+        /* relative path example: img/file1.jpg */
+        var relativePathRegExp = /(?<=\/)[^/]+\/[^/]+\.\w+$/;
+        var relativePath = url.match(relativePathRegExp)[0];
+        return relativePath;
+    } else {
+        return url;
+    }
+}
