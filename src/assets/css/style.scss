@@ -63,6 +63,7 @@ h3 {
     &:before {
         @extend .fa-sm;
         display: inline-block;
+        @extend .fa-fw;
     }
 }
 
@@ -98,8 +99,6 @@ nav {
 
 /* Features Section */
 
-/* Icons */
-
 .section-features {
     .features-copy {
         width: 80%;
@@ -116,6 +115,8 @@ nav {
         @extend .mb-3;
     }
 }
+
+/* Icons */
 
 .i-infinity {
     @include icon(fa-content($fa-var-infinity));
@@ -160,6 +161,38 @@ nav {
             padding: 15px;
         }
     }
+}
+
+/* Cities Section */
+
+.section-cities {
+    img {
+        @extend .img-fluid;
+    }
+
+    .city-box {
+        @extend .pb-3;
+    }
+
+    .i-user, .i-star, .i-twitter {
+        @extend .icon-small;
+
+        &:before {
+            @extend .mr-2;
+        }
+    }
+}
+
+.i-user {
+    @include icon(fa-content($fa-var-user));
+}
+
+.i-star {
+    @include icon(fa-content($fa-var-star));
+}
+
+.i-twitter {
+    @include icon(fa-content($fa-var-twitter));
 }
 
 /* Testimonials Section */

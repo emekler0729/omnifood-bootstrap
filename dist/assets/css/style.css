@@ -391,7 +391,7 @@ mark,
   .blockquote-footer::before {
     content: "\2014   \A0"; }
 
-.img-fluid {
+.img-fluid, .section-cities img {
   max-width: 100%;
   height: auto; }
 
@@ -5187,7 +5187,7 @@ button.bg-dark:focus {
 .my-2 {
   margin-top: 0.5rem !important; }
 
-.mr-2,
+.mr-2, .section-cities .i-user:before, .section-cities .i-star:before, .section-cities .i-twitter:before,
 .mx-2 {
   margin-right: 0.5rem !important; }
 
@@ -5329,7 +5329,7 @@ section {
 .px-3 {
   padding-right: 1rem !important; }
 
-.pb-3,
+.pb-3, .section-cities .city-box,
 .py-3,
 section {
   padding-bottom: 1rem !important; }
@@ -6744,7 +6744,7 @@ mark,
   .blockquote-footer::before {
     content: "\2014   \A0"; }
 
-.img-fluid {
+.img-fluid, .section-cities img {
   max-width: 100%;
   height: auto; }
 
@@ -11534,7 +11534,7 @@ button.bg-dark:focus {
 .my-2 {
   margin-top: 0.5rem !important; }
 
-.mr-2,
+.mr-2, .section-cities .i-user:before, .section-cities .i-star:before, .section-cities .i-twitter:before,
 .mx-2 {
   margin-right: 0.5rem !important; }
 
@@ -11676,7 +11676,7 @@ section {
 .px-3 {
   padding-right: 1rem !important; }
 
-.pb-3,
+.pb-3, .section-cities .city-box,
 .py-3,
 section {
   padding-bottom: 1rem !important; }
@@ -12708,6 +12708,9 @@ a.text-dark:hover, a.text-dark:focus {
 .i-clock:before,
 .i-lemon:before,
 .i-cart:before,
+.i-user:before,
+.i-star:before,
+.i-twitter:before,
 .far,
 .fal,
 .fab {
@@ -12727,7 +12730,7 @@ a.text-dark:hover, a.text-dark:focus {
 .fa-xs {
   font-size: .75em; }
 
-.fa-sm, .icon-small:before {
+.fa-sm, .icon-small:before, .section-cities .i-user:before, .section-cities .i-star:before, .section-cities .i-twitter:before {
   font-size: .875em; }
 
 .fa-1x {
@@ -12760,7 +12763,7 @@ a.text-dark:hover, a.text-dark:focus {
 .fa-10x {
   font-size: 10em; }
 
-.fa-fw {
+.fa-fw, .icon-small:before, .section-cities .i-user:before, .section-cities .i-star:before, .section-cities .i-twitter:before {
   text-align: center;
   width: 1.25em; }
 
@@ -12795,6 +12798,9 @@ a.text-dark:hover, a.text-dark:focus {
 .fa-pull-left.i-clock:before,
 .fa-pull-left.i-lemon:before,
 .fa-pull-left.i-cart:before,
+.fa-pull-left.i-user:before,
+.fa-pull-left.i-star:before,
+.fa-pull-left.i-twitter:before,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
@@ -12806,6 +12812,9 @@ a.text-dark:hover, a.text-dark:focus {
 .fa-pull-right.i-clock:before,
 .fa-pull-right.i-lemon:before,
 .fa-pull-right.i-cart:before,
+.fa-pull-right.i-user:before,
+.fa-pull-right.i-star:before,
+.fa-pull-right.i-twitter:before,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
@@ -15900,7 +15909,10 @@ readers do not read off random characters that represent icons */
 .i-infinity:before,
 .i-clock:before,
 .i-lemon:before,
-.i-cart:before {
+.i-cart:before,
+.i-user:before,
+.i-star:before,
+.i-twitter:before {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
@@ -15922,7 +15934,7 @@ h3 {
 .icon-big:before, .section-features .i-infinity:before, .section-features .i-clock:before, .section-features .i-lemon:before, .section-features .i-cart:before {
   display: block; }
 
-.icon-small:before {
+.icon-small:before, .section-cities .i-user:before, .section-cities .i-star:before, .section-cities .i-twitter:before {
   display: inline-block; }
 
 /* Section */
@@ -15937,10 +15949,10 @@ h3 {
   margin: 0; }
 
 /* Features Section */
-/* Icons */
 .section-features .features-copy {
   width: 80%; }
 
+/* Icons */
 .i-infinity:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15997,6 +16009,43 @@ h3 {
     color: #e67e22;
     border: solid 2px #e67e22;
     padding: 15px; }
+
+/* Cities Section */
+.i-user:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  color: #e67e22;
+  content: "\F007"; }
+
+.i-star:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  color: #e67e22;
+  content: "\F005"; }
+
+.i-twitter:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  color: #e67e22;
+  content: "\F099"; }
 
 /* Testimonials Section */
 .section-testimonials {
